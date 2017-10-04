@@ -174,10 +174,6 @@ let AddTodo = ({ dispatch }) => {
 
 AddTodo = connect()(AddTodo);
 
-AddTodo.contextTypes = {
-  store: PropTypes.object
-};
-
 const getVisibleTodos = (todos, filter) => {
   switch(filter) {
     case 'SHOW_ALL':
